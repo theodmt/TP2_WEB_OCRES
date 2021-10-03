@@ -10,23 +10,37 @@
 		<link rel="stylesheet" href="css/global.css"/>
 	</head>
 
-	<div class="container">
+	
 	<body>
 		<header>
-			<div class="wrapper">
-				<div class="logo-search">
-					<img class="pull-left" src="img/logo.png" />
+			<div class="container-fluid" style="padding: 20px;">
+				<div class="row">
+					<div class="col-2">
+						<div class="logo-search">
+							<img class="pull-left" src="img/logo.png" />
+						</div>
+					</div>
+
+					<div class="col-3">
+						<form method="POST" action="index.html">
+							<input type="search" required class="search">
+							<input type="submit" name="submit" value="Rechercher" class="submit">
+						</form>
+					</div>
+
+					<div class="col">
+						<div class="user">
+							<a href="#">Luke Chesser</a>
+						</div>
+					</div>
+
 				</div>
 
-				<form method="POST" action="index.html">
-					<input type="search" required class="search">
-					<input type="submit" name="submit" value="Rechercher" class="submit">
-				</form>
-				<div class="user">
-				    <a href="#">Luke Chesser</a>
-				</div>
 			</div>
 		</header>
+
+
+		
 		<aside>
 			<h3>Browse</h3>
 			<nav class="browse">
@@ -161,6 +175,6 @@
 		</main>
 	</body>
 
-</div>
+
 
 </html>
